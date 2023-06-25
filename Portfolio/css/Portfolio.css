@@ -1,0 +1,241 @@
+body{
+    background-color: #FFEED9;
+    color: #403930;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Navbar */
+header{
+  position: absolute;
+  top: 32px;
+  background-color: 0;
+  padding-left: 120px;
+  padding-top: 32px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar a {
+  margin-right: 32px;
+  text-decoration: none;
+  color: #403930;
+  font-size: 20px;
+  font-weight: 600; 
+}
+
+/* Hero Section */
+.Hero {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  padding-left: 120px;
+  margin-top: 174px;
+}
+
+.hey-box {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #FFDDBF;
+  color: #403930;
+  width: 124px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hey-box > #Hey{
+  text-align: center;
+  font-weight: 600; 
+}
+
+.name {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 32px;
+  margin-top: -20%;
+  font-weight: 600; 
+}
+
+.action-buttons {
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: -20%;
+}
+
+.view-work-button,
+.contact-me-button {
+      width: 270px;
+      height: 84px;
+      border-radius: 12px;
+      font-weight: 600; 
+  }    
+
+.view-work-button {
+    color: #F3F2FF;
+    background-color: #4E5E80;
+    font-size: 24px;
+    border: 12px;
+}   
+
+.contact-me-button {
+  color: #4D5566;
+  background-color: #FFDDBF;
+  font-size: 24px;
+}  
+
+#profile {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  justify-self: end;
+  padding-right: 120px;
+  padding-top: 0%;
+}
+  
+#profile > img {
+  width: auto;
+  Height: 65%;
+  border-radius: 20px;
+}
+
+/* Porfolio */
+.Work{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 10px;
+    padding-left: 120px;
+    padding-top: 88px;
+    background-color: #FFDDBF;
+}
+
+
+
+/* Contact Form */
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-form label {
+    color: black;
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: black;
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 200px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Footer Icons */
+  /* Footer Icons */
+ul.FooterLinks {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none; 
+  padding: 0;
+}
+
+/* ul.FooterLinks li {
+  margin: 10px 0;
+}
+
+ul.FooterLinks, li.GithubLink {
+  display: flex;
+  align-items: center;
+} */
+
+/* ul.FooterLinks li.GithubLink img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+} */
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  header {
+      padding-left: 16px;
+  }
+
+  #navbar a {
+      margin-right: 16px;
+      font-size: 18px;
+  }
+
+  .Hero {
+      grid-template-columns: 1fr;
+      padding-left: 16px;
+      margin-top: 112px;
+  }
+
+  .name {
+      margin-top: 24px;
+  }
+
+  .action-buttons {
+      margin-top: 24px;
+  }
+
+  #profile > img{
+      display: none;
+  }
+}
+
